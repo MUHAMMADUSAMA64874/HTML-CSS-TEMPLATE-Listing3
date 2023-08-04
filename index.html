@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Website with Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Custom styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #c8e0f4;
+      color: #031927;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #ba1200;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .jumbotron {
+      background-color: #9dd1f1;
+      padding: 50px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .jumbotron h1 {
+      color: #031927;
+    }
+    .section {
+      padding: 50px 0;
+    }
+    .section h2 {
+      color: #031927;
+      margin-bottom: 30px;
+    }
+    .section p {
+      color: #031927;
+    }
+    .cta-button {
+      background-color: #508aa8;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #1f2041;
+    }
+    .footer {
+      background-color: #031927;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer p {
+      margin: 0;
+    }
+    /* Sidebar styles */
+    .sidebar {
+      background-color: #508aa8;
+      color: #fff;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+    }
+    .sidebar h3 {
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .sidebar p {
+      color: #fff;
+    }
+    /* Animation styles */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* Apply animation to the gallery images */
+  .img-fluid.animated {
+    animation: fadeIn 1s ease-in-out;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Brand</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron" id="home">
+    <div class="container">
+      <h1>Welcome to Our Modern Website</h1>
+      <p>This website is designed to showcase our products and services.</p>
+      <button class="cta-button">Learn More</button>
+    </div>
+  </div>
+
+  <!-- eCommerce Gallery -->
+<div class="section">
+  <div class="container">
+    <h2 class="animated">eCommerce Gallery</h2>
+    <div class="row">
+      <div class="col-md-3 mb-3">
+        <img src="https://dummyimage.com/400x300/031927/ffffff" alt="Product 1" class="img-fluid rounded animated">
+      </div>
+      <div class="col-md-3 mb-3">
+        <img src="https://dummyimage.com/400x300/508aa8/ffffff" alt="Product 2" class="img-fluid rounded animated">
+      </div>
+      <div class="col-md-3 mb-3">
+        <img src="https://dummyimage.com/400x300/c8e0f4/031927" alt="Product 3" class="img-fluid rounded animated">
+      </div>
+      <div class="col-md-3 mb-3">
+        <img src="https://dummyimage.com/400x300/9dd1f1/000000" alt="Product 4" class="img-fluid rounded animated">
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Features Section -->
+  <div class="section" id="features">
+    <div class="container">
+      <h2>Key Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://dummyimage.com/400x300/ba1200/ffffff" alt="Feature 1" class="img-fluid rounded mb-3">
+          <h3>Responsive Design</h3>
+          <p>Our website is fully responsive and works great on all devices.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://dummyimage.com/400x300/031927/ffffff" alt="Feature 2" class="img-fluid rounded mb-3">
+          <h3>High-Quality Visuals</h3>
+          <p>We use high-quality images and graphics to create a visually appealing experience.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="https://dummyimage.com/400x300/9dd1f1/000000" alt="Feature 3" class="img-fluid rounded mb-3">
+          <h3>Interactive Elements</h3>
+          <p>We incorporate interactive elements to engage and delight our users.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+<div class="sidebar">
+  <h3 class="animated">About Us</h3>
+  <p class="animated">We are a leading eCommerce website that offers a wide range of products for your needs. Our mission is to provide the best shopping experience to our customers.</p>
+  <h3 class="animated">Featured Categories</h3>
+  <ul class="animated">
+    <li>Electronics</li>
+    <li>Home & Kitchen</li>
+    <li>Fashion</li>
+    <li>Beauty & Personal Care</li>
+  </ul>
+</div>
+
+  <!-- Contact Section -->
+  <div class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or inquiries, feel free to get in touch with us.</p>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- eCommerce Gallery -->
+  <div class="section">
+    <div class="container">
+      <h2>eCommerce Gallery</h2>
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <img src="https://dummyimage.com/400x300/031927/ffffff" alt="Product 1" class="img-fluid rounded">
+        </div>
+        <div class="col-md-3 mb-3">
+          <img src="https://dummyimage.com/400x300/508aa8/ffffff" alt="Product 2" class="img-fluid rounded">
+        </div>
+        <div class="col-md-3 mb-3">
+          <img src="https://dummyimage.com/400x300/c8e0f4/031927" alt="Product 3" class="img-fluid rounded">
+        </div>
+        <div class="col-md-3 mb-3">
+          <img src="https://dummyimage.com/400x300/9dd1f1/000000" alt="Product 4" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>About Us</h3>
+    <p>We are a leading eCommerce website that offers a wide range of products for your needs. Our mission is to provide the best shopping experience to our customers.</p>
+    <h3>Featured Categories</h3>
+    <ul>
+      <li>Electronics</li>
+      <li>Home & Kitchen</li>
+      <li>Fashion</li>
+      <li>Beauty & Personal Care</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
